@@ -115,6 +115,8 @@ if __name__ == '__main__':
         root = tk.Tk()
         root.withdraw()
         args.filename = filedialog.askopenfilename(parent=root)
+        root.destroy()
+
 
     if not os.path.exists(args.filename):
         print("Please specify a valid MDX/MDD file")
